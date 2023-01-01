@@ -23,7 +23,7 @@ namespace Data_Structure_Problems
                 }
                 temp.next = node;
             }
-            Console.WriteLine("{0}=> word add in list", node.data);
+            Console.WriteLine("{0}=> number add in list", node.data);
         }
         public void Search(T value)
         {
@@ -32,14 +32,14 @@ namespace Data_Structure_Problems
             {
                 if (temp.data.Equals(value))
                 {
-                    Console.WriteLine("\nThe founded word is :{0} ", temp.data);
+                    Console.WriteLine("\nThe founded number is :{0} ", temp.data);
                     return;
                 }
                 temp = temp.next;
             }
             if (temp == null)
             {
-                Console.WriteLine("\n{0} This word is not found", value);
+                Console.WriteLine("\n{0} This number is not found", value);
                 Add(value);
             }
         }
