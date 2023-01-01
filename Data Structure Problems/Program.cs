@@ -30,7 +30,12 @@ namespace Data_Structure_Problems
             }
             linkedOrderedList.Display();
             linkedOrderedList.Search(9);
-
+            LinkedListStack<string> linkedListStack = new LinkedListStack<string>();
+            BalancedParanthesis balancedParanthesis=new BalancedParanthesis();
+            string balancedPath = @"E:\Data_Structure_Problems_Update\Data_Structure_Problems_Update\Data Structure Problems\Balanced.txt";
+            balancedParanthesis.BalancedParenthesis(balancedPath);
+            linkedListStack.Peek();
+            linkedListStack.IsEmpty();
         }
     }
 }
