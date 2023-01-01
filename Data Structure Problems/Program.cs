@@ -36,6 +36,18 @@ namespace Data_Structure_Problems
             balancedParanthesis.BalancedParenthesis(balancedPath);
             linkedListStack.Peek();
             linkedListStack.IsEmpty();
+            LinkedListQueue<string> linkedListQueue = new LinkedListQueue<string>();
+            Console.WriteLine("Person is Added into queue : ");
+            Console.WriteLine("----------------------------");
+            linkedListQueue.EnqueuePerson("Rahul");
+            linkedListQueue.EnqueuePerson("Amit");
+            linkedListQueue.EnqueuePerson("Aman");
+            linkedListQueue.EnqueuePerson("Riya");
+            linkedListQueue.Display();
+            linkedListQueue.DequeuePerson();
+            Console.WriteLine("----------------------------");
+            linkedListQueue.Display();
+            Console.WriteLine("\n");
         }
     }
 }
